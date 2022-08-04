@@ -265,64 +265,6 @@ button{
     background-position: center;
     grid-area: foto6;
 }
-
-.ropa-mujer{
-    height:700px;
-    width: 95%;
-    background-color: #6babe7;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows:repeat(4, 1fr) ;
-    grid-template-areas: "fotom1 fotom4 fotom2"
-                         "fotom3 fotom4 fotom5"
-                         "fotom3 fotom4 fotom5"
-                         "fotom6 fotom6 fotom5";
-    grid-gap: 10px;
-    padding: 10px;
-    margin: 50px;
-                      
-}
-.todo-mujer1{
-    background-image: url(/multimedia/accesorios.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: fotom1;
-}
-
-.todo-mujer2{
-    background-image: url(/multimedia/pantalon-mujer.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: fotom2;
-}
-
-.todo-mujer3{
-    background-image: url(/multimedia/zapas-mujer.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: fotom3;
-}
-    
-.todo-mujer4{  
-    background-image: url(/multimedia/remera.mujer.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: fotom4;
-}
-.todo-mujer5{   
-    background-image: url(/multimedia/modelos.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: fotom5;
-}
-.todo-mujer6{
-    background-image: url(/multimedia/cartel.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: fotom6;
-}
-
-
 .contenedor{
     height: auto;
     width: 100%;
