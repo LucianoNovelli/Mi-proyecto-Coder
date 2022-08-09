@@ -9,64 +9,171 @@ html {
     scroll-behavior: smooth;
 }
 
-.navbar{
-    background-color:#a3dbe6;
+header{
+    background-color: rgb(242, 249, 250);
 }
 
+.logo{
+    padding-left:25px;
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
 .navbar a{
-    color: white;
-    text-shadow: 1px 1px 5px black;
-    font-size: 22px;
+    color:black;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
 }
-#color-titulo{
-    color: aquamarine;
+.btn{
+    height: 40px;
+    color: rgb(0, 0, 0);
+    border: 1px rgb(6, 6, 6) solid;
+    font-size: 15px;
+    font-family: 'Pacifico', cursive;
 }
-
 .jumbotron{
-    background-image: url(/multimedia/fotojumbotron.jpg);
+    height: 300px;
+    background-image: url(/multimedia/butt.jpg);
     background-size: cover;
     background-position: center;  
-    background-color:#d0e0e3;
-    margin-top: 5px;
+    background-color:#82f5b2;
     font-family: 'Pacifico', cursive;
     font-size: 35px;
-    color:#bdebdd;
-    text-shadow: 1px 1px 5px black;
+    color:#f5f5f5;
+    text-shadow: 5px 5px 5px black;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.nosotros{
+    height: 700px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.imgnosotros{
+    background-image: url(/multimedia/quienesomos.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    
+}
+
+.texto{
+    font-size: 45px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 5px rgb(22, 24, 23);
+}
+.carousel{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 }
 
 h3{
-    font-size: 25px;
     text-align: center;
-    background-color: rgb(243, 236, 213);
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 5px rgb(24, 26, 25);
+}
+
+.conte{
+    height: 1000px;
     width: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(0, 38, 255);
-    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+                        "ima1 ima2 ima3 ima4 ima5" 
+                        "ima6 ima7 ima3 ima8 ima9"
+    ;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.item{
+    border: 2px solid black;
+    border-radius: 7px;
 }
 
-#titulo-hombre{
-    font-size: 50px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 2px blue solid;
-    border-radius: 20px;
+.item1{
+    background-image: url(/multimedia/remera1.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima1;
 }
 
-h2 {
-    text-align: center;
-    background-color: #fad2f9;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: capitalize;
-    color: red;
-    font-size: 25px;
+
+.item2{
+    background-image: url(/multimedia/remera2.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima2;
 }
+
+.item3{
+    background-image: url(/multimedia/remera3.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima3;
+}
+
+.item4{
+    background-image: url(/multimedia/remera4.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima4;
+}
+
+.item5{
+    background-image: url(/multimedia/remera5.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima5;
+}
+
+.item6{
+    background-image: url(/multimedia/remera6.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima6;
+}
+
+.item7{
+    background-image: url(/multimedia/remera7.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima7;
+}
+
+.item8{
+    background-image: url(/multimedia/remera8.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima8;
+}
+
+.item9{
+    background-image: url(/multimedia/remera9.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: ima9;
+}
+
+
+
+
+
+
 
 footer {
     height: 100px;
     text-align: center;
     background-color: rgb(170, 191, 247);
     padding: 1px;
+    margin-top: 10px;
 }
 
 footer p {
@@ -81,216 +188,4 @@ footer .redes i {
     background-color: rgb(170, 191, 247);
     color: black;
     letter-spacing: 20px;
-}
-
-.subir {
-    height: 50px;
-    width: 50px;
-    background-color: orange;
-    text-align: center;
-    line-height: 50px;
-    border: 2px solid black;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    font-size: 25px;
-}
-
-.formulario{
-    width: 70%;
-    height: 600px;
-    background-color: rgb(170, 191, 247);
-    margin-top: 60px;
-    border: 2px black solid;
-    margin-left: 250px;
-    overflow: hidden;
-    font-size: 23px;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.boton-for{
-    background-color: cornflowerblue;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    font-size: 12px;
-    margin-left: 3px;
-}
-.form{
-    margin-left: 10px;
-    padding: 3px;
-}
-
-.todo-ropa{
-    width: 900px;
-    height: 300px;
-    background-color: gainsboro;
-    border: 2px black solid;
-    margin-left:20px ;
-    margin-top: 80px;
-}
-.todo-ropa h2{
-    background-color: gainsboro;
-    text-align: left;
-    font-size: 30px;
-    color: blue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 10px;
-}
-img{
-    width: 180px;
-    height: 180px;
-    border: 2px black solid;
-    margin-left: 30px;
-}
-
-button{
-    margin-left: 55px;
-    margin-right: 65px;
-    width:100px;
-    height:30px;
-    display:inline;
-    background-color:aqua;
-}
-
-#colormujer{
-    background-color: #f3babb;
-}
-#colorniño{
-    background-color: cornflowerblue;
-}
-.ropa-hombre{
-    display: flex;
-    align-content: center;
-    height:700px;
-    width: 95%;
-    background-color: #6babe7;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows:repeat(4, 1fr) ;
-    grid-template-areas: "foto1 foto1 foto2"
-                         "foto3 foto4 foto5"
-                         "foto3 foto4 foto5"
-                         "foto3 foto6 foto6";
-    grid-gap: 10px;
-    padding: 10px;
-    margin: 50px;
-                      
-}
-
-.galeria{
-    border: 2px black solid;
-    border-radius: 5px;
-}
-
-.todo-hombre1{
-    background-image: url(/multimedia/accesorioshombres.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto1;
-}
-
-.todo-hombre2{
-    background-image: url(/multimedia/pantalon-hombre.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto2;
-}
-
-.todo-hombre3{
-    background-image: url(/multimedia/remeras-blancas.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto3;
-}
-    
-.todo-hombre4{  
-    background-image: url(/multimedia/remera-hombre.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto4;
-}
-.todo-hombre5{   
-    background-image: url(/multimedia/zapas-hombred.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto5;
-}
-.todo-hombre6{
-    background-image: url(/multimedia/images.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: foto6;
-}
-.contenedor{
-    height: auto;
-    width: 100%;
-    background-color: cadetblue;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas:  "ima1 ima2 ima3 ima3"
-                          "ima1 ima4 ima5 ima6"
-                           "ima7 ima4 ima8 ima8"
-    ;
-    grid-gap: 20px;
-    padding: 20px;
-}
-
-.item{
-    border: 2px solid black;
-    border-radius: 7px;
-}
-
-.item1{
-    background-image: url(remeras/imagen1.jpg);
-    background-size: center;
-    background-position: center;
-    grid-area: ima1;
-}
-
-.item2{
-    background-image: url(remeras/imagen2.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: ima2;
-}
-.item3{
-    background-image: url(remeras/imagen3.jpg);
-    background-size: auto;
-    background-position: center;
-    grid-area: ima3;
-}
-.item4{
-    background-image: url(remeras/imagen4.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: ima4;
-}
-.item5{
-    background-image: url(remeras/imagen5.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: ima5;
-}
-.item6{
-    background-image: url(remeras/imagen6.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: ima6;
-}
-.item7{
-    background-image: url(remeras/imagen7.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: ima7;
-}
-.item8{
-    background-image: url(remeras/imagen8.jpg);
-    background-size: cover;
-    background-position: center;
-    grid-area: ima8;
-    
 }

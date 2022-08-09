@@ -1,0 +1,2 @@
+Mi proyecto se va a tratar de una pagina de ropa... que va a contener ambos sexos (Hombre y mujer).
+Va a tener una seccion de ropa de niño, y otra seccion mas de accesorios (Relojes, anilos, bufandas, zapatos, etc), y se va a llamar "A-todo-moda".
