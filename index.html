@@ -14,28 +14,33 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrption" content="Pagina principal,ropa hombre,ropa mujer, ropa niños">
+    <meta name="keywords" content="a todo moda, tienda de ropa, ropa de marca">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <title>Menu principal</title>
+    <title>A todo moda</title>
 </head>
 
 <body>
 <!--Comiendo de mi Header-->    
 <header>
     <div class="conteiner-fluid">
-        <nav class="navbar navbar-expand-md  fixed-top">
-            
-            <div class="conteiner-fluid">
-                <a class="navbar-brand logo" href="#">A todo moda</a>
+        <nav class="navbar navbar-expand-md  bg-dark fixed-top ">
+
+            <div class="conteiner-fluid navbar-text">
+                <a class="navbar-brand logo" href="#">
+                    <img src="/fotos/logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
+                    A todo moda
+                </a>
             </div>
 
             <div class="conteiner-fluid collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Ropa masculina</a>
+                        <a class="nav-link" href="/Menus/hombres.html">Ropa masculina</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link "href="#">Ropa femenina</a>
+                        <a class="nav-link "href="/Menus/mujeres.html">Ropa femenina</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link "href="#">Ropa niños</a>
@@ -45,6 +50,7 @@
                     </li>
                 </ul>
             </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,8 +68,8 @@
 </div>
 <!--Fin de mi Jumbotron-->
 
-<div class="conteiner">
-    <div class="row quienes ">
+<div class="conteiner-fluid">
+    <div class="row quienes bg-dark ">
         <h3 class="col-12">Nosotros!</h3>
         <img class="col-12 col-xl-6" src="/fotos/fashion-3221102_1280.jpg" alt="">
         <div class="col-12 col-xl-6 ">
@@ -76,7 +82,7 @@
     </div>
 </div>
 
-<div class="conteiner-fluid productos-hombres">
+<div class="conteiner productos-hombres">
         <div class="titulo">
             <h2> Remeras de Hombres </h2>  
         </div>
@@ -87,8 +93,10 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $2200</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
             <div class="card  col-5 col-xl-2 " style="width:400px">
@@ -97,8 +105,10 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $1700</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
             <div class="card  col-5 col-xl-2 " style="width:400px">
@@ -107,8 +117,10 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $2100</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
             <div class="card  col-5 col-xl-2 " style="width:400px">
@@ -117,13 +129,15 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $2000</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
             
         </div> 
-    <div>
+    <div class="boton-todo">
         <button type="button" class="btn btn-primary">Ver todo</button>
     </div>
 </div>
@@ -139,8 +153,10 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $4200</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
         <div class="card  col-5 col-xl-2" style="width:400px">
@@ -149,8 +165,10 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $4700</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div> 
         <div class="card  col-5 col-xl-2" style="width:400px">
@@ -159,8 +177,10 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $3900</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
         <div class="card  col-5 col-xl-2" style="width:400px">
@@ -169,12 +189,14 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $3700</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div> 
     </div> 
-<div>
+<div class="boton-todo">
     <button type="button" class="btn btn-primary">Ver todo</button>
 </div>
 </div>
@@ -190,8 +212,10 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $1900</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
             <div class="card  col-5 col-xl-2" style="width:400px">
@@ -200,8 +224,10 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $2100</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
             <div class="card  col-5 col-xl-2" style="width:400px">
@@ -210,8 +236,10 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $1999</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
             <div class="card  col-5 col-xl-2" style="width:400px">
@@ -220,12 +248,14 @@
                     <h4 class="card-title">Remera Manga larga</h4>
                     <p class="card-text">Precio: $2400</p>
                     <p class="card-text">Talle: L - M - S</p>
-                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="carrito">
+                        <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
                 </div>
             </div>
         </div> 
-    <div>
+    <div class="boton-todo">
         <button type="button" class="btn btn-primary">Ver todo</button>
     </div>
 </div>
@@ -241,8 +271,10 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $4900</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
         <div class="card  col-5 col-xl-2" style="width:400px">
@@ -251,8 +283,10 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $5100</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
         <div class="card  col-5 col-xl-2" style="width:400px">
@@ -261,8 +295,10 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $5300</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
         <div class="card  col-5 col-xl-2" style="width:400px">
@@ -271,16 +307,50 @@
                 <h4 class="card-title">Remera Manga larga</h4>
                 <p class="card-text">Precio: $5200</p>
                 <p class="card-text">Talle: L - M - S</p>
-                <a href="#" class="btn btn-danger">Agregar al carrito</a>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="carrito">
+                    <a href="#" class="btn btn-danger">Agregar al carrito</a>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
             </div>
         </div>
     </div> 
-<div>
+<div class="boton-todo">
     <button type="button" class="btn btn-primary">Ver todo</button>
 </div>
 </div>
-
+<footer>
+    <div class="conteiner-fluid">
+        <div class="row">
+            <div class="col-4 col-xl-4 redes">
+                <h4>Seguinos en todas nuestras redes sociales</h4>
+                <div class="item-footer">
+                    <i class="fa-brands fa-facebook"><a href="#">Facebook</a></i>
+                </div>
+                <div class="item-footer">
+                    <i class="fa-brands fa-instagram"><a href="#">Instagram</a></i>
+                </div>
+                <div class="item-footer">
+                    <i class="fa-brands fa-twitter"> <a href="#">Twitter</a></i>
+                </div>
+            </div>
+            <div class="col-4 col-xl-4 pagos">
+                <h4>Todos los medios de pagos</h4>
+                <p>Mercado pago<i class="fa-brands fa-cc-amex"></i></p>
+                <p>Tarjeta visa credito y debito<i class="fa-brands fa-cc-visa"></i></p>
+                <p>Tranferencia bancaria<i class="fa-solid fa-building-columns"></i></p>
+                <p>Efectivo<i class="fas fa-dollar-sign"></i></p>
+            </div>
+            <div class="col-4 col-xl-4 yo">
+                <h4>Medios de Contacto</h4>
+                <p>Telefono: 2324-590539<i class="fa-brands fa-whatsapp"></i></p>
+                <p>Email: Luciano_novelli94@hotmail.com<i class="fa-solid fa-envelope"></i></i></p>
+                <p>Redes Sociales: Luciano-Novelli<i class="fa-brands fa-google"></i></p>
+            </div>
+            <h3>Todos los derechos reservado por copyright - Luciano Novelli</h3>
+        </div> 
+        
+    </div> 
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

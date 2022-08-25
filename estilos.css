@@ -10,14 +10,14 @@ html {
 }
 
 body {
-  background-image: white;
+  background-color: white;
 }
 
 .navbar {
-  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+  background-color: #abd5f7;
 }
 .navbar a {
-  color: rgb(0, 17, 255);
+  color: rgb(246, 246, 252);
 }
 .navbar a:hover {
   color: red;
@@ -26,69 +26,80 @@ body {
   padding-left: 20px;
   font-size: 30px;
   font-family: "Fredoka One", cursive;
-  text-shadow: 1px 1px 1px rgb(246, 246, 209);
+  text-shadow: 2px 2px 2px 1px rgb(246, 246, 209);
+}
+.navbar li {
+  padding-right: 20px;
 }
 .navbar li a {
   font-size: 20px;
   font-family: "Fredoka One", cursive;
-  text-shadow: 1px 1px 5px rgb(246, 217, 209);
+  text-shadow: 2px 2px 2px 1px rgb(246, 246, 209);
+}
+.navbar button {
+  margin-right: 20px;
+  background-color: #fdfcfb;
 }
 
 .espacio {
-  height: 60px;
+  height: 75px;
 }
 
 .jumbotron {
+  height: 300px;
   text-align: center;
-  font-size: 18px;
   font-family: "Fredoka One", cursive;
   color: rgb(0, 17, 255);
-  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(/fotos/store-906722_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .jumbotron h1 {
   font-family: "Fredoka One", cursive;
-  color: rgb(0, 17, 255);
-  text-shadow: 1px 1px 1px rgb(246, 246, 209);
+  color: rgb(251, 252, 255);
+  text-shadow: 1px 2px 1px 2px rgb(248, 243, 243);
+  font-size: 30px;
 }
 .jumbotron p {
   font-family: "Fredoka One", cursive;
-  color: rgb(0, 17, 255);
+  color: rgb(255, 255, 255);
   font-size: 25px;
-  text-shadow: 1px 1px 1px rgb(246, 246, 209);
+  text-shadow: 1px 1px 1px 2px rgb(248, 243, 243);
 }
 
 .quienes {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 20px;
-  background-image: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 100%);
-  width: 100%;
-  border-radius: 5px;
+  background-color: #abd5f7;
+  border-radius: 1px;
 }
 .quienes h3 {
   font-size: 40px;
   font-family: "Fredoka One", cursive;
   text-align: center;
-  color: rgb(0, 17, 255);
+  color: rgb(255, 255, 255);
 }
 .quienes img {
   padding: 10px;
   height: 310px;
+  border-radius: 15px;
 }
 .quienes h4 {
   text-align: center;
   font-size: 25px;
   font-family: "Fredoka One", cursive;
-  color: rgb(0, 17, 255);
-  text-shadow: 2px 2px 5px white;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px 1px white;
   padding-top: 25px;
 }
 .quienes p {
   text-align: center;
   font-size: 25px;
   font-family: "Fredoka One", cursive;
-  color: rgb(0, 17, 255);
-  text-shadow: 2px 2px 5px white;
+  color: rgb(242, 243, 248);
+  text-shadow: 2px 2px 5px 1px white;
   padding: 30px;
 }
 
@@ -97,30 +108,44 @@ body {
 }
 
 .card {
-  margin: auto;
+  margin: 5px;
   margin-top: 5px;
   border-radius: 15px;
+  height: 550px;
+  background-color: rgb(255, 255, 255);
+}
+.card img {
+  height: 320px;
+  border-radius: 10px;
 }
 .card h4 {
-  color: red;
+  color: rgb(7, 7, 7);
   font-size: 20px;
-  text-shadow: 1px 1px 5px coral;
+  text-shadow: 1px 1px 5px 1px rgb(248, 248, 248);
 }
 .card p {
-  color: blue;
+  color: rgb(118, 118, 189);
   font-size: 20px;
 }
-.card i {
-  font-size: 28px;
-  color: red;
+.card .carrito {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+}
+.card .carrito i {
+  padding-top: 18px;
+  padding-left: 10px;
+  font-size: 25px;
+  color: rgb(238, 64, 64);
 }
 
 .productos-hombres {
+  width: 85%;
+  margin: auto;
   text-align: center;
-  background-color: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .productos-hombres h2 {
-  color: rgb(0, 17, 255);
+  color: rgb(22, 45, 255);
   font-size: 45px;
   font-family: "Fredoka One", cursive;
   text-shadow: 2px 2px 5px cyan;
@@ -133,13 +158,22 @@ body {
 .productos-hombres img {
   padding-top: 10px;
 }
+.productos-hombres .boton-todo {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.productos-hombres .boton-todo button {
+  font-size: 26px;
+}
 
 .productos-mujer {
   text-align: center;
   margin-top: 20px;
+  width: 85%;
+  margin: auto;
 }
 .productos-mujer h2 {
-  color: rgb(247, 90, 181);
+  color: rgb(22, 45, 255);
   font-size: 45px;
   font-family: "Fredoka One", cursive;
   text-shadow: 2px 2px 5px cyan;
@@ -149,9 +183,75 @@ body {
   background-color: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 .productos-mujer .btn {
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: cursive;
 }
 .productos-mujer img {
   padding-top: 10px;
+}
+.productos-mujer .boton-todo {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.productos-mujer .boton-todo button {
+  font-size: 26px;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  height: 220px;
+}
+footer h3 {
+  font-family: verdana;
+  color: blue;
+  font-size: 10px;
+  text-align: center;
+}
+footer .redes h4 {
+  font-family: verdana;
+  color: red;
+  padding-left: 35px;
+}
+footer .redes i {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 30px;
+  color: red;
+}
+footer .redes a {
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .redes a:hover {
+  color: red;
+}
+footer .pagos h4 {
+  font-family: verdana;
+  color: red;
+}
+footer .pagos p {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 30px;
+}
+footer .pagos i {
+  padding-left: 10px;
+  font-size: 20px;
+  color: red;
+}
+footer .yo h4 {
+  font-family: verdana;
+  color: red;
+}
+footer .yo p {
+  color: white;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+footer .yo i {
+  padding-left: 10px;
+  font-size: 20px;
+  color: red;
 }/*# sourceMappingURL=estilos.css.map */
