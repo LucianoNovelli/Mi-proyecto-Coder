@@ -198,29 +198,32 @@ body {
 }
 
 footer {
-  background-color: rgb(0, 0, 0);
-  height: 220px;
+  width: 99%;
+  margin: auto;
+  margin-bottom: 2px;
+  border: solid black 1px;
 }
 footer h3 {
   font-family: verdana;
-  color: blue;
+  color: black;
   font-size: 10px;
   text-align: center;
 }
 footer .redes h4 {
   font-family: verdana;
-  color: red;
+  color: black;
   padding-left: 35px;
+  text-shadow: 2px 2px 2px white;
 }
 footer .redes i {
   padding-bottom: 15px;
   padding-top: 15px;
   padding-left: 30px;
-  color: red;
+  color: blue;
 }
 footer .redes a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -229,29 +232,151 @@ footer .redes a:hover {
 }
 footer .pagos h4 {
   font-family: verdana;
-  color: red;
+  color: black;
+  text-shadow: 2px 2px 2px white;
 }
 footer .pagos p {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-left: 30px;
 }
 footer .pagos i {
   padding-left: 10px;
   font-size: 20px;
-  color: red;
+  color: blue;
 }
 footer .yo h4 {
   font-family: verdana;
-  color: red;
+  color: black;
+  text-shadow: 2px 2px 2px white;
 }
 footer .yo p {
-  color: white;
+  color: rgb(5, 5, 5);
   padding-top: 10px;
   padding-left: 30px;
 }
 footer .yo i {
   padding-left: 10px;
   font-size: 20px;
+  color: blue;
+}
+
+.carousel {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.carousel .card {
+  background-color: #abd5f7;
+}
+.carousel img {
+  width: 99%;
+  padding-left: 3px;
+  padding-top: 5px;
+}
+.carousel h4 {
+  margin-top: 40px;
   color: red;
+  text-align: center;
+}
+.carousel p {
+  color: blue;
+  text-align: center;
+}
+.carousel .btn {
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.caja-mujer {
+  background-color: rgb(237, 226, 75);
+  height: 800px;
+  margin-top: 100px;
+  border: solid 2px red;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.caja-mujer .sub-caja {
+  background-color: rgb(237, 211, 178);
+  height: 750px;
+  border: 2px solid black;
+  margin: 30px;
+}
+.caja-mujer .item-mujer {
+  background-color: aqua;
+  height: 250px;
+  width: 300px;
+  border: solid 1px black;
+  margin: 10px;
+  display: block;
+}
+.caja-mujer .item-mujer h4 {
+  text-align: center;
+}
+.caja-mujer .item-mujer p {
+  text-align: center;
+}
+.caja-mujer .item-mujer img {
+  height: 160px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+}
+
+.contactos {
+  background-image: linear-gradient(rgba(29, 29, 29, 0.7), rgba(0, 0, 0, 0.4)), url(/fotos/contactos-body.jpg);
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+
+.formulario {
+  width: 95%;
+  height: 800px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border: solid 1px white;
+  border-radius: 8px;
+}
+.formulario h5 {
+  color: red;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  margin-top: 5px;
+  font-size: 35px;
+  text-shadow: 1px 1px 10px rgb(28, 4, 243);
+}
+.formulario label {
+  color: red;
+  padding-left: 5px;
+  font-size: 20px;
+  text-shadow: 1px 1px 10px rgb(28, 4, 243);
+  font-family: "DM Serif Display", serif;
+}
+.formulario input {
+  background-color: antiquewhite;
+}
+.formulario textarea {
+  background-color: antiquewhite;
+}
+.formulario button {
+  color: red;
+  text-shadow: 1px 1px 10px rgb(28, 4, 243);
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+.formulario button:hover {
+  color: aqua;
 }/*# sourceMappingURL=estilos.css.map */

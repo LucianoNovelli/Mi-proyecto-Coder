@@ -1,2 +1,0 @@
-Se agregaron etiquetas meta al head, para mejorar el seo
-y Se agrego un mixin para mi footer
