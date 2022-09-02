@@ -13,6 +13,15 @@ body{
     background-color: white;
 }
 
+.envio{
+    text-align: center;
+    background-color: rgb(105, 103, 103);
+    height:22px;
+    margin-bottom: auto;
+    margin-top: auto;
+    color: #fdfcfb;
+}
+
 .navbar{
     background-color: #abd5f7; 
     a{
@@ -43,7 +52,7 @@ body{
 }
 
 .espacio{
-    height: 75px;
+    height: 105px;
 }
 
 .jumbotron{
@@ -205,17 +214,39 @@ body{
     }
 }
 
+.oferta{
+    background-color: black;
+    color: #fdfcfb;
+    text-align: center;
+    margin-bottom: 20px;
+    input{
+        width: 90%;
+        margin: auto;
+    }
+    button{
+        background-color: white;
+        height: 40px;
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+
 @mixin letra-color($fuente,$color) {
     font-family:$fuente;
     color: $color;
 }
 
 footer{
-
-    width: 99%;
+    width: 100%;
+    height: 100px;
     margin: auto;
     margin-bottom: 2px;
-    border: solid black 1px;
+    
     h3{
         @include letra-color(verdana,black);
         font-size: 10px;
@@ -224,7 +255,8 @@ footer{
     .redes{
         h4{
             @include letra-color(verdana,black);
-            padding-left: 35px;
+            font-size: 15px;
+            padding-left: 15px;
             text-shadow: 2px 2px 2px  white;
         }
         i{
@@ -232,30 +264,36 @@ footer{
             padding-top: 15px;
             padding-left: 30px;
             color: blue;
+            font-size: 15px;
         }
         a{
             text-decoration: none;
             color: rgb(0, 0, 0);
             padding-left: 20px;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
+            
             &:hover{
                 color: red;
             }
         }
     }
+
     .pagos{
         h4{
             @include letra-color(verdana,black);
             text-shadow: 2px 2px 2px  white;
+            font-size: 15px;
         }
         p{
             color: rgb(0, 0, 0);
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            padding-left: 30px;
+            padding-left: 10px;
+            padding-top: 5px;
+            font-size: 15px;
         }
         i{
             padding-left: 10px;
-            font-size: 20px;
+            font-size: 15px;
             color: blue;
         }
     }
@@ -263,11 +301,13 @@ footer{
         h4{
             @include letra-color(verdana,black);
             text-shadow: 2px 2px 2px  white;
+            font-size: 15px;
         }
         p{
             color: rgb(5, 5, 5);
             padding-top: 10px;
-            padding-left: 30px;
+            padding-left: 10px;
+            font-size: 15px;
         }
         i{
             padding-left: 10px;
@@ -277,71 +317,31 @@ footer{
     }
 }
 
-.carousel{
-    margin-top: 100px;
-    margin-left: 100px;
-    .card{
-        background-color: #abd5f7;
-    }
-    img{
-        width: 99%;
-        padding-left: 3px;
-        padding-top: 5px;
-    }
-    h4{
-        margin-top: 40px;
-        color: red;
-        text-align: center;
-    }
-    p{
-        color: blue;
-        text-align: center;
-    }
-    .btn{
-        background-color: black;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 20px;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        border: none;
-    }
-}
-
 .caja-mujer{
     background-color: rgb(237, 226, 75);
-    height: 800px;
     margin-top: 100px;
     border: solid 2px red;
-    width: 99%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 98%;
 
-    .sub-caja{
-        background-color: rgb(237, 211, 178);
-        height: 750px;
-        border: 2px solid black;
-        margin: 30px;
-    }
     .item-mujer{
         background-color: aqua;
-        height: 250px;
-        width: 300px;
+        height: 450px;
+        width: 400px;
         border: solid 1px black;
-        margin: 10px;
+        margin: 10px 0px 15px 30px;
         display: block;
         h4{
             text-align: center;
+            padding-top: 10px;
         }
         p{
             text-align: center;
         }
         img{
-            height: 160px;
+            height: 350px;
+            width: 300px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
             border: 1px solid red;
         }
     }
@@ -395,5 +395,14 @@ footer{
         &:hover{
             color: aqua;
         }
+    }
+}
+
+
+.item{
+    height: 400px;
+    img{
+        width: 200px;
+        height: 300px;
     }
 }

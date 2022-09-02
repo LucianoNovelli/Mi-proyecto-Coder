@@ -13,6 +13,15 @@ body {
   background-color: white;
 }
 
+.envio {
+  text-align: center;
+  background-color: rgb(105, 103, 103);
+  height: 22px;
+  margin-bottom: auto;
+  margin-top: auto;
+  color: #fdfcfb;
+}
+
 .navbar {
   background-color: #abd5f7;
 }
@@ -42,7 +51,7 @@ body {
 }
 
 .espacio {
-  height: 75px;
+  height: 105px;
 }
 
 .jumbotron {
@@ -197,11 +206,32 @@ body {
   font-size: 26px;
 }
 
+.oferta {
+  background-color: black;
+  color: #fdfcfb;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.oferta input {
+  width: 90%;
+  margin: auto;
+}
+.oferta button {
+  background-color: white;
+  height: 40px;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 footer {
-  width: 99%;
+  width: 100%;
+  height: 100px;
   margin: auto;
   margin-bottom: 2px;
-  border: solid black 1px;
 }
 footer h3 {
   font-family: verdana;
@@ -212,7 +242,8 @@ footer h3 {
 footer .redes h4 {
   font-family: verdana;
   color: black;
-  padding-left: 35px;
+  font-size: 15px;
+  padding-left: 15px;
   text-shadow: 2px 2px 2px white;
 }
 footer .redes i {
@@ -220,6 +251,7 @@ footer .redes i {
   padding-top: 15px;
   padding-left: 30px;
   color: blue;
+  font-size: 15px;
 }
 footer .redes a {
   text-decoration: none;
@@ -234,26 +266,31 @@ footer .pagos h4 {
   font-family: verdana;
   color: black;
   text-shadow: 2px 2px 2px white;
+  font-size: 15px;
 }
 footer .pagos p {
   color: rgb(0, 0, 0);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: 30px;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 15px;
 }
 footer .pagos i {
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 15px;
   color: blue;
 }
 footer .yo h4 {
   font-family: verdana;
   color: black;
   text-shadow: 2px 2px 2px white;
+  font-size: 15px;
 }
 footer .yo p {
   color: rgb(5, 5, 5);
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 10px;
+  font-size: 15px;
 }
 footer .yo i {
   padding-left: 10px;
@@ -261,72 +298,32 @@ footer .yo i {
   color: blue;
 }
 
-.carousel {
-  margin-top: 100px;
-  margin-left: 100px;
-}
-.carousel .card {
-  background-color: #abd5f7;
-}
-.carousel img {
-  width: 99%;
-  padding-left: 3px;
-  padding-top: 5px;
-}
-.carousel h4 {
-  margin-top: 40px;
-  color: red;
-  text-align: center;
-}
-.carousel p {
-  color: blue;
-  text-align: center;
-}
-.carousel .btn {
-  background-color: black;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-}
-
 .caja-mujer {
   background-color: rgb(237, 226, 75);
-  height: 800px;
   margin-top: 100px;
   border: solid 2px red;
-  width: 99%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.caja-mujer .sub-caja {
-  background-color: rgb(237, 211, 178);
-  height: 750px;
-  border: 2px solid black;
-  margin: 30px;
+  width: 98%;
 }
 .caja-mujer .item-mujer {
   background-color: aqua;
-  height: 250px;
-  width: 300px;
+  height: 450px;
+  width: 400px;
   border: solid 1px black;
-  margin: 10px;
+  margin: 10px 0px 15px 30px;
   display: block;
 }
 .caja-mujer .item-mujer h4 {
   text-align: center;
+  padding-top: 10px;
 }
 .caja-mujer .item-mujer p {
   text-align: center;
 }
 .caja-mujer .item-mujer img {
-  height: 160px;
+  height: 350px;
+  width: 300px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border: 1px solid red;
 }
 
@@ -379,4 +376,12 @@ footer .yo i {
 }
 .formulario button:hover {
   color: aqua;
+}
+
+.item {
+  height: 400px;
+}
+.item img {
+  width: 200px;
+  height: 300px;
 }/*# sourceMappingURL=estilos.css.map */
