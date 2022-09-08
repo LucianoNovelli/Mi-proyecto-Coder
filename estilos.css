@@ -55,7 +55,6 @@ body {
 }
 
 .jumbotron {
-  height: 300px;
   text-align: center;
   font-family: "Fredoka One", cursive;
   color: rgb(0, 17, 255);
@@ -63,9 +62,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.jumbotron .text {
-  margin-top: 60px;
 }
 .jumbotron .text h1 {
   font-family: "Fredoka One", cursive;
@@ -90,7 +86,7 @@ body {
   height: 500px;
   width: 500px;
   padding: 10px 0px 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   margin: auto;
 }
 .quienes h4 {
@@ -115,7 +111,6 @@ body {
   margin-right: auto;
   margin-top: 5px;
   border-radius: 15px;
-  height: 600px;
   background-color: rgb(255, 255, 255);
 }
 .card img {
@@ -147,10 +142,10 @@ body {
   text-align: center;
 }
 .productos-hombres h2 {
-  color: rgb(22, 45, 255);
-  font-size: 45px;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
   font-family: "Fredoka One", cursive;
-  text-shadow: 2px 2px 5px cyan;
+  text-shadow: 2px 2px 2px rgb(250, 169, 169);
   margin-bottom: 20px;
 }
 .productos-hombres .btn {
@@ -159,9 +154,6 @@ body {
 }
 .productos-hombres .btn:hover {
   background-color: blue;
-}
-.productos-hombres .btn:hover p {
-  color: red;
 }
 .productos-hombres img {
   padding-top: 10px;
@@ -180,10 +172,10 @@ body {
   margin: auto;
 }
 .productos-mujer h2 {
-  color: rgb(22, 45, 255);
-  font-size: 45px;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
   font-family: "Fredoka One", cursive;
-  text-shadow: 2px 2px 5px cyan;
+  text-shadow: 2px 2px 2px rgb(250, 169, 169);
   margin-bottom: 20px;
 }
 .productos-mujer .card {
