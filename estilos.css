@@ -51,7 +51,7 @@ body {
 }
 
 .espacio {
-  height: 105px;
+  height: 95px;
 }
 
 .jumbotron {
@@ -64,40 +64,38 @@ body {
   background-size: cover;
   background-position: center;
 }
-.jumbotron h1 {
+.jumbotron .text {
+  margin-top: 60px;
+}
+.jumbotron .text h1 {
   font-family: "Fredoka One", cursive;
   color: rgb(251, 252, 255);
   text-shadow: 1px 2px 1px 2px rgb(248, 243, 243);
-  font-size: 30px;
+  font-size: 40px;
 }
-.jumbotron p {
+.jumbotron .text p {
   font-family: "Fredoka One", cursive;
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 35px;
   text-shadow: 1px 1px 1px 2px rgb(248, 243, 243);
 }
 
 .quienes {
-  margin: auto;
   margin-top: 10px;
   margin-bottom: 20px;
   background-color: #abd5f7;
   border-radius: 1px;
 }
-.quienes h3 {
-  font-size: 40px;
-  font-family: "Fredoka One", cursive;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
 .quienes img {
-  padding: 10px;
-  height: 310px;
-  border-radius: 15px;
+  height: 500px;
+  width: 500px;
+  padding: 10px 0px 10px;
+  border-radius: 5px;
+  margin: auto;
 }
 .quienes h4 {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Fredoka One", cursive;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px 1px white;
@@ -105,22 +103,19 @@ body {
 }
 .quienes p {
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Fredoka One", cursive;
   color: rgb(242, 243, 248);
   text-shadow: 2px 2px 5px 1px white;
   padding: 30px;
 }
 
-.conteiner-fluid {
-  margin-bottom: 10px;
-}
-
 .card {
-  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5px;
   border-radius: 15px;
-  height: 550px;
+  height: 600px;
   background-color: rgb(255, 255, 255);
 }
 .card img {
@@ -149,8 +144,6 @@ body {
 }
 
 .productos-hombres {
-  width: 85%;
-  margin: auto;
   text-align: center;
 }
 .productos-hombres h2 {
@@ -163,6 +156,12 @@ body {
 .productos-hombres .btn {
   margin-top: 10px;
   font-family: cursive;
+}
+.productos-hombres .btn:hover {
+  background-color: blue;
+}
+.productos-hombres .btn:hover p {
+  color: red;
 }
 .productos-hombres img {
   padding-top: 10px;
@@ -178,7 +177,6 @@ body {
 .productos-mujer {
   text-align: center;
   margin-top: 20px;
-  width: 85%;
   margin: auto;
 }
 .productos-mujer h2 {
@@ -232,19 +230,26 @@ footer {
   height: 100px;
   margin: auto;
   margin-bottom: 2px;
+  margin-top: 50px;
+}
+footer h4 {
+  font-family: verdana;
+  color: rgb(54, 13, 235);
+  text-shadow: 2px 2px 2px white;
+  font-size: 15px;
+  padding-left: 5px;
 }
 footer h3 {
   font-family: verdana;
-  color: black;
+  color: rgb(255, 1, 1);
   font-size: 10px;
   text-align: center;
 }
-footer .redes h4 {
-  font-family: verdana;
-  color: black;
+footer p {
+  color: rgb(5, 5, 5);
+  padding-top: 10px;
+  padding-left: 10px;
   font-size: 15px;
-  padding-left: 15px;
-  text-shadow: 2px 2px 2px white;
 }
 footer .redes i {
   padding-bottom: 15px;
@@ -262,35 +267,10 @@ footer .redes a {
 footer .redes a:hover {
   color: red;
 }
-footer .pagos h4 {
-  font-family: verdana;
-  color: black;
-  text-shadow: 2px 2px 2px white;
-  font-size: 15px;
-}
-footer .pagos p {
-  color: rgb(0, 0, 0);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: 10px;
-  padding-top: 5px;
-  font-size: 15px;
-}
 footer .pagos i {
   padding-left: 10px;
   font-size: 15px;
   color: blue;
-}
-footer .yo h4 {
-  font-family: verdana;
-  color: black;
-  text-shadow: 2px 2px 2px white;
-  font-size: 15px;
-}
-footer .yo p {
-  color: rgb(5, 5, 5);
-  padding-top: 10px;
-  padding-left: 10px;
-  font-size: 15px;
 }
 footer .yo i {
   padding-left: 10px;
@@ -316,6 +296,10 @@ footer .yo i {
   text-align: center;
   padding-top: 10px;
 }
+.caja-mujer .item-mujer h4:hover {
+  font-size: 35px;
+  color: red;
+}
 .caja-mujer .item-mujer p {
   text-align: center;
 }
@@ -325,6 +309,10 @@ footer .yo i {
   display: block;
   margin: auto;
   border: 1px solid red;
+}
+.caja-mujer .item-mujer img:hover {
+  height: 370px;
+  width: 310px;
 }
 
 .contactos {
@@ -378,10 +366,26 @@ footer .yo i {
   color: aqua;
 }
 
-.item {
-  height: 400px;
+.prueba {
+  height: 600px;
+  background-color: #e2d1c3;
+  margin-top: 100px;
 }
-.item img {
-  width: 200px;
+.prueba .items {
+  background-color: aquamarine;
+  height: 600px;
+  position: relative;
+}
+.prueba .items img {
+  width: 300px;
   height: 300px;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background-image: url(/fotos/mujer2.webp);
+  background-size: cover;
+  background-position: center;
+}
+.prueba .items img:hover {
+  opacity: 0;
 }/*# sourceMappingURL=estilos.css.map */

@@ -52,7 +52,7 @@ body{
 }
 
 .espacio{
-    height: 105px;
+    height: 95px;
 }
 
 .jumbotron{
@@ -64,43 +64,38 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-
-    h1{
-        font-family: 'Fredoka One', cursive;
-        color: rgb(251, 252, 255);
-        text-shadow: 1px 2px 1px 2px rgb(248, 243, 243);
-        font-size: 30px;
-    }
-    p{
-        font-family: 'Fredoka One', cursive;
-        color: rgb(255, 255, 255);
-        font-size: 25px;
-        text-shadow: 1px 1px 1px 2px  rgb(248, 243, 243);
+    .text{
+        margin-top: 60px; 
+        h1{
+            font-family: 'Fredoka One', cursive;
+            color: rgb(251, 252, 255);
+            text-shadow: 1px 2px 1px 2px rgb(248, 243, 243);
+            font-size: 40px;
+        }
+        p{
+            font-family: 'Fredoka One', cursive;
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            text-shadow: 1px 1px 1px 2px  rgb(248, 243, 243);
+        }
     }
 }
 
 .quienes{
-    margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
     background-color: #abd5f7;;
     border-radius: 1px;
-    h3{
-        
-        font-size: 40px;
-        font-family: 'Fredoka One', cursive;
-        text-align: center;
-        color: rgb(255, 255, 255);
-    }
     img{
-        padding: 10px;
-        height: 310px;
-        border-radius: 15px;
+        height: 500px;
+        width: 500px;
+        padding: 10px 0px 10px;
+        border-radius: 5px;
+        margin: auto;
     }
     h4{
         text-align: center;
-        font-size: 25px;
+        font-size: 35px;
         font-family: 'Fredoka One', cursive;
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 5px 1px white;
@@ -108,7 +103,7 @@ body{
     }
     p{
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         font-family: 'Fredoka One', cursive;
         color: rgb(242, 243, 248);
         text-shadow: 2px 2px 5px 1px white;
@@ -116,16 +111,12 @@ body{
     }
 }
 
-.conteiner-fluid{
-    margin-bottom: 10px;
-
-}
-
 .card{
-    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5px;
     border-radius: 15px;
-    height: 550px;
+    height: 600px;
     background-color:  rgb(255, 255, 255);
 
     img{
@@ -155,9 +146,6 @@ body{
 }
 
 .productos-hombres{  
-    
-    width: 85%;
-    margin: auto;
     text-align: center;
     h2{
         color: rgb(22, 45, 255);
@@ -169,6 +157,13 @@ body{
     .btn{
         margin-top: 10px;
         font-family:cursive;
+        &:hover{
+            background-color: blue;
+            a{
+                color: red;
+            }
+        }
+        }
     }
     img{
         padding-top: 10px;
@@ -182,11 +177,12 @@ body{
         }
     }
 }
+
 .productos-mujer{
     text-align: center;
     margin-top: 20px;
-    width: 85%;
     margin: auto;
+
     h2{
         color: rgb(22, 45, 255);
         font-size: 45px;
@@ -246,19 +242,26 @@ footer{
     height: 100px;
     margin: auto;
     margin-bottom: 2px;
-    
+    margin-top: 50px;
+    h4{
+        @include letra-color(verdana,rgb(54, 13, 235));
+        text-shadow: 2px 2px 2px  white;
+        font-size: 15px;
+        padding-left: 5px
+    }
     h3{
-        @include letra-color(verdana,black);
+        @include letra-color(verdana,rgb(255, 1, 1));
         font-size: 10px;
         text-align: center;
     }
+    p{
+        color: rgb(5, 5, 5);
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+
     .redes{
-        h4{
-            @include letra-color(verdana,black);
-            font-size: 15px;
-            padding-left: 15px;
-            text-shadow: 2px 2px 2px  white;
-        }
         i{
             padding-bottom: 15px;
             padding-top: 15px;
@@ -277,20 +280,7 @@ footer{
             }
         }
     }
-
     .pagos{
-        h4{
-            @include letra-color(verdana,black);
-            text-shadow: 2px 2px 2px  white;
-            font-size: 15px;
-        }
-        p{
-            color: rgb(0, 0, 0);
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            padding-left: 10px;
-            padding-top: 5px;
-            font-size: 15px;
-        }
         i{
             padding-left: 10px;
             font-size: 15px;
@@ -298,17 +288,6 @@ footer{
         }
     }
     .yo{
-        h4{
-            @include letra-color(verdana,black);
-            text-shadow: 2px 2px 2px  white;
-            font-size: 15px;
-        }
-        p{
-            color: rgb(5, 5, 5);
-            padding-top: 10px;
-            padding-left: 10px;
-            font-size: 15px;
-        }
         i{
             padding-left: 10px;
             font-size: 20px;
@@ -333,6 +312,10 @@ footer{
         h4{
             text-align: center;
             padding-top: 10px;
+            &:hover{
+                font-size: 35px;
+                color: red;
+            }
         }
         p{
             text-align: center;
@@ -343,6 +326,11 @@ footer{
             display: block;
             margin: auto;
             border: 1px solid red;
+            &:hover{
+                height: 370px;
+                width: 310px;
+                
+            }
         }
     }
 }
@@ -399,10 +387,27 @@ footer{
 }
 
 
-.item{
-    height: 400px;
-    img{
-        width: 200px;
-        height: 300px;
+.prueba{
+    height: 600px;
+    background-color: #e2d1c3;
+    margin-top: 100px;
+    .items{
+        background-color: aquamarine;
+        height: 600px;
+        position: relative;
+        img{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            background-image: url(/fotos/mujer2.webp);
+            background-size: cover;
+            background-position: center;
+            &:hover{
+                opacity: 0;
+            }
+        }
+
     }
 }
