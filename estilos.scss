@@ -59,7 +59,7 @@ body{
     text-align: center;
     font-family: 'Fredoka One', cursive;
     color: rgb(0, 17, 255);
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url(/fotos/store-906722_1920.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(/fotos/store-906722_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -68,17 +68,28 @@ body{
         h1{
             font-family: 'Fredoka One', cursive;
             color: rgb(251, 252, 255);
-            text-shadow: 1px 2px 1px 2px rgb(248, 243, 243);
-            font-size: 40px;
+            text-shadow: 1px 1px 1px  rgb(248, 243, 243);
+            font-size: 35px;
         }
         p{
             font-family: 'Fredoka One', cursive;
             color: rgb(255, 255, 255);
-            font-size: 35px;
-            text-shadow: 1px 1px 1px 2px  rgb(248, 243, 243);
+            font-size: 30px;
+            text-shadow: 1px 1px 1px   rgb(248, 243, 243);
         }
     }
 }
+
+.carro{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img{
+        border-radius: 10px;
+        border: solid red 2px;
+        margin: auto;
+    }
+}
+
 
 .quienes{
     margin-top: 10px;
@@ -88,7 +99,7 @@ body{
     img{
         height: 500px;
         width: 500px;
-        padding: 10px 0px 10px;
+        padding: 10px 10px 10px 10px;
         border-radius: 20px;
         margin: auto;
     }
@@ -107,6 +118,7 @@ body{
         color: rgb(242, 243, 248);
         text-shadow: 2px 2px 5px 1px white;
         padding: 30px;
+        text-align:justify;
     }
 }
 
@@ -116,19 +128,24 @@ body{
     margin-top: 5px;
     border-radius: 15px;
     background-color:  rgb(255, 255, 255);
+    border: none;
 
     img{
-        height: 320px;
-        border-radius: 10px;  
+        height: 300px;
+        border-radius: 20px;  
     }
     h4{
         color: rgb(7, 7, 7);
-        font-size: 20px;
+        font-size: 15px;
         text-shadow: 1px 1px 5px 1px rgb(248, 248, 248);
     }
     p{
-        color: rgb(118, 118, 189);
-        font-size: 20px;
+        color: rgb(20, 20, 227);
+        font-size: 15px;
+    }
+
+    .btn{
+        font-size: 12px;
     }
     .carrito{
         display: flex;
@@ -137,7 +154,7 @@ body{
         i{
             padding-top: 18px;
             padding-left: 10px;
-            font-size: 25px;
+            font-size: 20px;
             color: rgb(238, 64, 64);
         }
     }
@@ -259,7 +276,7 @@ footer{
         i{
             padding-bottom: 15px;
             padding-top: 15px;
-            padding-left: 30px;
+            padding-left: 5px;
             color: blue;
             font-size: 15px;
         }
