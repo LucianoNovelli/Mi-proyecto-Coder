@@ -15,11 +15,11 @@ body{
 
 .envio{
     text-align: center;
-    background-color: rgb(105, 103, 103);
+    background-color: rgb(246, 222, 222);
     height:22px;
     margin-bottom: auto;
     margin-top: auto;
-    color: #fdfcfb;
+    color: rgb(234, 34, 134);
 }
 
 .navbar{
@@ -43,11 +43,13 @@ body{
             font-size: 20px;
             font-family: 'Fredoka One', cursive;
             text-shadow: 2px 2px 2px 1px rgb(246, 246, 209);
+            padding-left: 15px;
         }
     }
     button{
         margin-right: 20px;
         background-color: #fdfcfb;
+        margin-left: 10px;
     }   
 }
 
@@ -63,17 +65,18 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 200px;
     .text{
         
         h1{
             font-family: 'Fredoka One', cursive;
-            color: rgb(251, 252, 255);
+            color: rgb(234, 34, 134);
             text-shadow: 1px 1px 1px  rgb(248, 243, 243);
-            font-size: 35px;
+            font-size: 55px;
         }
         p{
             font-family: 'Fredoka One', cursive;
-            color: rgb(255, 255, 255);
+            color: rgb(234, 34, 134);
             font-size: 30px;
             text-shadow: 1px 1px 1px   rgb(248, 243, 243);
         }
@@ -84,9 +87,7 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
     img{
-        border-radius: 10px;
-        border: solid red 2px;
-        margin: auto;
+        border-radius: 5px;
     }
 }
 
@@ -222,10 +223,11 @@ body{
 }
 
 .oferta{
+    height: 180px;
     background-color: black;
     color: #fdfcfb;
     text-align: center;
-    margin-bottom: 20px;
+
     input{
         width: 90%;
         margin: auto;
@@ -233,12 +235,13 @@ body{
     button{
         background-color: white;
         height: 40px;
+        width: 120px;
         color: black;
         border-radius: 5px;
         text-align: center;
         font-size: 18px;
-        margin-top: 5px;
         margin-bottom: 5px;
+        margin-top: 15px;
     }
 }
 
