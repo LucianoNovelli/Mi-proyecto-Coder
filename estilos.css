@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .envio {
@@ -43,9 +43,10 @@ body {
 }
 .navbar li a {
   font-size: 20px;
-  font-family: "Fredoka One", cursive;
+  font-family: monospace;
   text-shadow: 2px 2px 2px 1px rgb(246, 246, 209);
   padding-left: 15px;
+  color: rgb(234, 34, 134);
 }
 .navbar button {
   margin-right: 20px;
@@ -68,14 +69,14 @@ body {
   height: 210px;
 }
 .jumbotron .text h1 {
-  font-family: "Fredoka One", cursive;
+  font-family: monospace;
   color: rgb(234, 34, 134);
   text-shadow: 1px 1px 1px rgb(248, 243, 243);
   font-size: 55px;
   margin-top: 5px;
 }
 .jumbotron .text p {
-  font-family: "Fredoka One", cursive;
+  font-family: monospace;
   color: rgb(234, 34, 134);
   font-size: 22px;
   text-shadow: 1px 1px 1px rgb(248, 243, 243);
@@ -105,7 +106,7 @@ body {
 .quienes h4 {
   text-align: center;
   font-size: 25px;
-  font-family: "Fredoka One", cursive;
+  font-family: monospace;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px 1px white;
   padding-top: 25px;
@@ -113,7 +114,7 @@ body {
 .quienes p {
   text-align: center;
   font-size: 30px;
-  font-family: "Fredoka One", cursive;
+  font-family: monospace;
   color: rgb(242, 243, 248);
   text-shadow: 2px 2px 5px 1px white;
   padding: 30px;
@@ -125,24 +126,44 @@ body {
   margin-right: auto;
   margin-top: 5px;
   border-radius: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(20, 19, 19);
   border: none;
+}
+.card:hover img {
+  filter: brightness(50%);
+}
+.card:hover h4 {
+  font-size: 22px;
+}
+.card:hover p {
+  font-size: 17px;
+}
+.card:hover .btn {
+  font-size: 18px;
 }
 .card img {
   height: 300px;
-  border-radius: 20px;
+  border-radius: 5px;
+  transition: all 0.8s ease;
 }
 .card h4 {
-  color: rgb(7, 7, 7);
-  font-size: 15px;
+  color: white;
+  font-size: 20px;
   text-shadow: 1px 1px 5px 1px rgb(248, 248, 248);
+  transition: all 0.8s ease;
+  font-family: monospace;
 }
 .card p {
-  color: rgb(0, 0, 0);
+  color: white;
   font-size: 15px;
+  transition: all 0.8s ease;
+  font-family: monospace;
 }
 .card .btn {
-  font-size: 12px;
+  font-size: 15px;
+  background-color: #fdfcfb;
+  color: black;
+  font-family: monospace;
 }
 .card .carrito {
   display: flex;
@@ -153,7 +174,7 @@ body {
   padding-top: 18px;
   padding-left: 10px;
   font-size: 20px;
-  color: rgb(238, 64, 64);
+  color: rgb(255, 255, 255);
 }
 
 .productos-hombres {
@@ -162,16 +183,13 @@ body {
 .productos-hombres h2 {
   color: rgb(0, 0, 0);
   font-size: 60px;
-  font-family: "Fredoka One", cursive;
+  font-family: monospace;
   text-shadow: 2px 2px 2px rgb(250, 169, 169);
   margin-bottom: 20px;
 }
 .productos-hombres .btn {
   margin-top: 10px;
   font-family: cursive;
-}
-.productos-hombres .btn:hover {
-  background-color: blue;
 }
 .productos-hombres img {
   padding-top: 10px;
@@ -183,24 +201,23 @@ body {
 .productos-hombres .boton-todo button {
   font-size: 26px;
 }
+.productos-hombres .boton-todo button a {
+  color: #fdfcfb;
+  text-decoration: none;
+}
 
 .productos-mujer {
   text-align: center;
-  margin-top: 20px;
-  margin: auto;
 }
 .productos-mujer h2 {
   color: rgb(0, 0, 0);
   font-size: 60px;
-  font-family: "Fredoka One", cursive;
+  font-family: monospace;
   text-shadow: 2px 2px 2px rgb(250, 169, 169);
   margin-bottom: 20px;
 }
-.productos-mujer .card {
-  background-color: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-}
 .productos-mujer .btn {
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: cursive;
 }
 .productos-mujer img {
@@ -213,12 +230,17 @@ body {
 .productos-mujer .boton-todo button {
   font-size: 26px;
 }
+.productos-mujer .boton-todo button a {
+  color: #fdfcfb;
+  text-decoration: none;
+}
 
 .oferta {
   height: 180px;
   background-color: black;
   color: #fdfcfb;
   text-align: center;
+  font-family: monospace;
 }
 .oferta input {
   width: 90%;
@@ -241,16 +263,17 @@ footer {
   margin: auto;
   margin-bottom: 2px;
   margin-top: 50px;
+  background-color: rgb(246, 222, 222);
 }
 footer h4 {
-  font-family: verdana;
+  font-family: monospace;
   color: rgb(54, 13, 235);
   text-shadow: 2px 2px 2px white;
   font-size: 15px;
   padding-left: 5px;
 }
 footer h3 {
-  font-family: verdana;
+  font-family: monospace;
   color: rgb(22, 1, 255);
   font-size: 10px;
   text-align: center;
@@ -260,6 +283,7 @@ footer p {
   padding-top: 10px;
   padding-left: 10px;
   font-size: 15px;
+  font-family: monospace;
 }
 footer .redes i {
   padding-bottom: 15px;
@@ -272,7 +296,7 @@ footer .redes a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding-left: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: monospace;
 }
 footer .redes a:hover {
   color: red;
@@ -286,43 +310,6 @@ footer .yo i {
   padding-left: 10px;
   font-size: 20px;
   color: blue;
-}
-
-.caja-mujer {
-  background-color: rgb(237, 226, 75);
-  margin-top: 100px;
-  border: solid 2px red;
-  width: 98%;
-}
-.caja-mujer .item-mujer {
-  background-color: aqua;
-  height: 450px;
-  width: 400px;
-  border: solid 1px black;
-  margin: 10px 0px 15px 30px;
-  display: block;
-}
-.caja-mujer .item-mujer h4 {
-  text-align: center;
-  padding-top: 10px;
-}
-.caja-mujer .item-mujer h4:hover {
-  font-size: 35px;
-  color: red;
-}
-.caja-mujer .item-mujer p {
-  text-align: center;
-}
-.caja-mujer .item-mujer img {
-  height: 350px;
-  width: 300px;
-  display: block;
-  margin: auto;
-  border: 1px solid red;
-}
-.caja-mujer .item-mujer img:hover {
-  height: 370px;
-  width: 310px;
 }
 
 .contactos {
@@ -376,26 +363,39 @@ footer .yo i {
   color: aqua;
 }
 
-.prueba {
-  height: 600px;
-  background-color: #e2d1c3;
+.titulo-mujer {
   margin-top: 100px;
+  margin-bottom: 20px;
 }
-.prueba .items {
-  background-color: aquamarine;
-  height: 600px;
-  position: relative;
+.titulo-mujer h1 {
+  text-align: center;
+  color: rgb(234, 34, 134);
+  font-family: monospace;
 }
-.prueba .items img {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  background-image: url(/fotos/mujer2.webp);
-  background-size: cover;
-  background-position: center;
+
+.mujer-reme {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-family: monospace;
 }
-.prueba .items img:hover {
-  opacity: 0;
+.mujer-reme h4 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.item-1 {
+  margin-top: 20px;
+  width: 280px;
+  background-color: rgb(250, 185, 240);
+}
+.item-1 img {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 2px;
+}
+.item-1 p {
+  margin-top: 5px;
+  text-align: center;
+  color: #080808;
+  font-family: monospace;
 }/*# sourceMappingURL=estilos.css.map */
