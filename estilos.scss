@@ -23,12 +23,12 @@ body{
 }
 
 .navbar{
-    background-color: #abd5f7; 
+    
     a{
         color: rgb(246, 246, 252);
     }
     a:hover{
-        color: red;
+        color: white;
     }
     .logo{
         color: rgb(234, 34, 134);
@@ -74,13 +74,13 @@ body{
             font-family:monospace;
             color: rgb(234, 34, 134);
             text-shadow: 1px 1px 1px  rgb(248, 243, 243);
-            font-size: 55px;
+            font-size: 50px;
             margin-top: 5px;
         }
         p{
             font-family:monospace;
             color: rgb(234, 34, 134);
-            font-size: 22px;
+            font-size: 20px;
             text-shadow: 1px 1px 1px   rgb(248, 243, 243);
         }
     }
@@ -127,13 +127,11 @@ body{
 }
 
 .card{
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 5px;
     border-radius: 15px;
     background-color:rgb(20, 19, 19);
     border: none;
-    
+    margin: 40px;
     &:hover{
         img{
             filter: brightness(50%);
@@ -192,9 +190,10 @@ body{
 
 .productos-hombres{
     text-align: center;
+    
     h2{
         color: rgb(0, 0, 0);
-        font-size: 60px;
+        font-size: 45px;
         font-family:monospace;
         text-shadow: 2px 2px 2px rgb(250, 169, 169);
         margin-bottom: 20px;
@@ -224,7 +223,7 @@ body{
     text-align: center;
     h2{
         color: rgb(0, 0, 0);
-        font-size: 60px;
+        font-size: 45px;
         font-family:monospace;
         text-shadow: 2px 2px 2px rgb(250, 169, 169);
         margin-bottom: 20px;
@@ -281,7 +280,6 @@ body{
 
 footer{
     width: 100%;
-    margin: auto;
     margin-bottom: 2px;
     margin-top: 50px;
     background-color: rgb(246, 222, 222);
@@ -390,8 +388,8 @@ footer{
 }
 
 .titulo-mujer{
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-top: 130px;
+    margin-bottom: 40px;
     h1{
         text-align: center;
         color: rgb(234, 34, 134);
@@ -399,30 +397,131 @@ footer{
     }
 }
 
-.mujer-reme{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-family: monospace;
-    h4{
-        text-align: center;
-        font-size: 35px;
+.foto-portada{
+    img{
+        width: 100%;
     }
 }
 
-.item-1{
-    margin-top: 20px;
-    width: 280px;
-    background-color:rgb(250, 185, 240);
-
-    img{
-        margin-top: 5px;
-        width: 100%;
-        border-radius: 2px;
-    }
-    p{
-        margin-top: 5px;
+.mujer-venta{
+    font-family: monospace;
+    text-align: center;
+    border-radius: 10px;
+    h4{
+        margin-top: 30px;
         text-align: center;
-        color: #080808;
+        font-size: 35px;
+    }  
+    .item-1{
+        margin-top: 20px;
+        background-color:rgb(249, 202, 242);
+        margin: 40px;
+
+        &:hover{
+            img{
+                filter: brightness(50%);
+            }
+            p{
+                color:white;
+            }
+        }
+        img{
+            margin-top: 5px;
+            width: 100%;
+            border-radius: 2px;
+
+        }
+        p{
+            margin-top: 5px;
+            text-align: center;
+            color: #080808;
+            font-family: monospace;
+        }
+        button{
+            text-align: center;
+            background-color: rgb(224, 124, 177);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            &:hover{
+                background-color: fuchsia;
+                color: white;
+            }
+        }
+    }
+}
+.titulo-hombre{
+    margin-top: 100px;
+    color: #45a4f1;
+    text-align: center;
+    font-family: monospace;
+}
+.foto-portada-hombre{
+    margin-top: 30px;
+    img{
+        width: 100%;
+        
+    }
+}
+
+.hombre-venta{
+    text-align: center;
+    h4{
+        text-align: center;
         font-family: monospace;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .item-1{
+        margin-top:10px;
+        border-radius: 10px;
+        background-color: #aaafb4;;
+        img{
+            width: 100%;
+            margin-top: 10px;
+        }
+        button{
+            margin: 10px;
+            text-align: center;
+            padding: 8px;
+            border-radius: 8px;
+            background-color: lightgray;    
+        }
+        p{
+            color: #fdfcfb;
+            margin-top: 10px;
+            font-family: monospace;
+        }
+    }
+}
+
+.medios-pagos{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: black;
+    margin-top: 20px;
+    h3{
+        text-align: center;
+        margin: 20px;
+        font-family: monospace;
+        color: #fdfcfb;
+    }
+    .pago{
+        margin: 10px;
+        img{
+            width: 100%;
+            height: 200px;
+            padding: 5px;
+            border: solid white 1px;
+            border-radius: 5px;
+        }
+        p{
+            text-align: center;
+            margin-top: 5px;
+            font-family: monospace;
+            font-size: 20px;
+            color: #fdfcfb;
+        }
     }
 }
