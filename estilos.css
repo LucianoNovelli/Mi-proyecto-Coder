@@ -15,6 +15,7 @@ body {
 
 .envio {
   text-align: center;
+  font-family: "Fredoka One", cursive;
   background-color: rgb(246, 222, 222);
   height: 22px;
   margin-bottom: auto;
@@ -40,7 +41,7 @@ body {
 }
 .navbar li a {
   font-size: 20px;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
   text-shadow: 2px 2px 2px 1px rgb(246, 246, 209);
   padding-left: 15px;
   color: rgb(234, 34, 134);
@@ -66,17 +67,15 @@ body {
   height: 210px;
 }
 .jumbotron .text h1 {
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
   color: rgb(234, 34, 134);
-  text-shadow: 1px 1px 1px rgb(248, 243, 243);
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 5px;
 }
 .jumbotron .text p {
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
   color: rgb(234, 34, 134);
   font-size: 20px;
-  text-shadow: 1px 1px 1px rgb(248, 243, 243);
 }
 
 .carro {
@@ -89,7 +88,7 @@ body {
 
 .quienes {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   background-color: #abd5f7;
   border-radius: 1px;
 }
@@ -103,16 +102,16 @@ body {
 .quienes h4 {
   text-align: center;
   font-size: 25px;
-  font-family: monospace;
-  color: rgb(255, 255, 255);
+  font-family: "Fredoka One", cursive;
+  color: rgb(234, 34, 134);
   text-shadow: 2px 2px 5px 1px white;
   padding-top: 25px;
 }
 .quienes p {
   text-align: center;
   font-size: 30px;
-  font-family: monospace;
-  color: rgb(242, 243, 248);
+  font-family: "Fredoka One", cursive;
+  color: rgb(234, 34, 134);
   text-shadow: 2px 2px 5px 1px white;
   padding: 30px;
   text-align: justify;
@@ -121,9 +120,9 @@ body {
 .card {
   margin-top: 5px;
   border-radius: 15px;
-  background-color: rgb(20, 19, 19);
   border: none;
   margin: 40px;
+  background-color: rgb(75, 74, 74);
 }
 .card:hover img {
   filter: brightness(50%);
@@ -147,19 +146,20 @@ body {
   font-size: 20px;
   text-shadow: 1px 1px 5px 1px rgb(248, 248, 248);
   transition: all 0.8s ease;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
 }
 .card p {
   color: white;
   font-size: 15px;
   transition: all 0.8s ease;
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .card .btn {
   font-size: 15px;
   background-color: #fdfcfb;
   color: black;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
+  border: 2px solid rgb(8, 8, 8);
 }
 .card .carrito {
   display: flex;
@@ -179,7 +179,7 @@ body {
 .productos-hombres h2 {
   color: rgb(0, 0, 0);
   font-size: 45px;
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 2px 2px 2px rgb(250, 169, 169);
   margin-bottom: 20px;
 }
@@ -208,13 +208,13 @@ body {
 .productos-mujer h2 {
   color: rgb(0, 0, 0);
   font-size: 45px;
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 2px 2px 2px rgb(250, 169, 169);
   margin-bottom: 20px;
 }
 .productos-mujer .btn {
   margin-top: 10px;
-  font-family: cursive;
+  font-family: "Fredoka One", cursive;
 }
 .productos-mujer img {
   padding-top: 10px;
@@ -233,7 +233,7 @@ body {
 
 .oferta {
   height: 180px;
-  background-color: black;
+  background-color: rgb(75, 74, 74);
   color: #fdfcfb;
   text-align: center;
   font-family: monospace;
@@ -249,62 +249,65 @@ body {
   color: black;
   border-radius: 5px;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 5px;
   margin-top: 5px;
+  transition: all 0.5s ease;
+}
+.oferta button:hover {
+  height: 45px;
+  width: 125px;
 }
 
 footer {
   width: 100%;
   margin-bottom: 2px;
   margin-top: 50px;
-  background-color: rgb(246, 222, 222);
 }
 footer h4 {
-  font-family: monospace;
-  color: rgb(54, 13, 235);
-  text-shadow: 2px 2px 2px white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
   font-size: 15px;
   padding-left: 5px;
 }
 footer h3 {
-  font-family: monospace;
-  color: rgb(22, 1, 255);
+  font-family: "Fredoka One", cursive;
+  color: white;
   font-size: 10px;
   text-align: center;
 }
 footer p {
-  color: rgb(5, 5, 5);
+  color: white;
   padding-top: 10px;
   padding-left: 10px;
   font-size: 15px;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
 }
 footer .redes i {
   padding-bottom: 15px;
   padding-top: 15px;
   padding-left: 5px;
-  color: blue;
+  color: pink;
   font-size: 15px;
 }
 footer .redes a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding-left: 20px;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
 }
 footer .redes a:hover {
-  color: red;
+  color: palevioletred;
 }
 footer .pagos i {
   padding-left: 10px;
   font-size: 15px;
-  color: blue;
+  color: pink;
 }
 footer .yo i {
   padding-left: 10px;
   font-size: 20px;
-  color: blue;
+  color: pink;
 }
 
 .contactos {
@@ -349,7 +352,7 @@ footer .yo i {
   background-color: antiquewhite;
   text-align: center;
   font-family: "DM Serif Display", serif;
-  font-size: 18px;
+  font-size: 16px;
   width: 100px;
   height: 40px;
   border-radius: 10px;
@@ -365,7 +368,7 @@ footer .yo i {
 .titulo-mujer h1 {
   text-align: center;
   color: rgb(234, 34, 134);
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .foto-portada img {
@@ -380,12 +383,15 @@ footer .yo i {
 .mujer-venta h4 {
   margin-top: 30px;
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(234, 34, 134);
 }
 .mujer-venta .item-1 {
   margin-top: 20px;
   background-color: rgb(249, 202, 242);
   margin: 40px;
+  border-radius: 10px;
 }
 .mujer-venta .item-1:hover img {
   filter: brightness(50%);
@@ -394,15 +400,16 @@ footer .yo i {
   color: white;
 }
 .mujer-venta .item-1 img {
-  margin-top: 5px;
+  margin-top: 10px;
   width: 100%;
-  border-radius: 2px;
+  border-radius: 10px;
+  transition: all 0.8s ease;
 }
 .mujer-venta .item-1 p {
   margin-top: 5px;
   text-align: center;
   color: #080808;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
 }
 .mujer-venta .item-1 button {
   text-align: center;
@@ -410,6 +417,7 @@ footer .yo i {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
+  transition: all 0.8s ease;
 }
 .mujer-venta .item-1 button:hover {
   background-color: fuchsia;
@@ -417,10 +425,10 @@ footer .yo i {
 }
 
 .titulo-hombre {
-  margin-top: 100px;
+  margin-top: 120px;
   color: #45a4f1;
   text-align: center;
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .foto-portada-hombre {
@@ -435,18 +443,21 @@ footer .yo i {
 }
 .hombre-venta h4 {
   text-align: center;
-  font-family: monospace;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 40px;
+  font-size: 45px;
+  color: #45a4f1;
 }
 .hombre-venta .item-1 {
   margin-top: 10px;
   border-radius: 10px;
   background-color: #aaafb4;
+  margin: 40px;
 }
 .hombre-venta .item-1 img {
   width: 100%;
   margin-top: 10px;
+  transition: all 0.9s ease;
 }
 .hombre-venta .item-1 button {
   margin: 10px;
@@ -454,11 +465,24 @@ footer .yo i {
   padding: 8px;
   border-radius: 8px;
   background-color: lightgray;
+  transition: all 0.8s ease;
 }
 .hombre-venta .item-1 p {
-  color: #fdfcfb;
+  color: black;
   margin-top: 10px;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
+  font-size: 18px;
+}
+.hombre-venta .item-1:hover p {
+  color: #45a4f1;
+}
+.hombre-venta .item-1:hover img {
+  filter: brightness(50%);
+}
+.hombre-venta .item-1:hover button {
+  background-color: white;
+  color: #45a4f1;
+  border: solid 2px #45a4f1;
 }
 
 .medios-pagos {
@@ -470,7 +494,7 @@ footer .yo i {
 .medios-pagos h3 {
   text-align: center;
   margin: 20px;
-  font-family: monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #fdfcfb;
 }
 .medios-pagos .pago {
@@ -486,7 +510,7 @@ footer .yo i {
 .medios-pagos .pago p {
   text-align: center;
   margin-top: 5px;
-  font-family: monospace;
+  font-family: "Fredoka One", cursive;
   font-size: 20px;
   color: #fdfcfb;
 }/*# sourceMappingURL=estilos.css.map */

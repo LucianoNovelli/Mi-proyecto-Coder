@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+$color-hombre: #aaafb4;
+$color-mujer:rgb(249, 202, 242);
+$letra-1:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$letra-2:'Fredoka One', cursive;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +21,7 @@ body{
 
 .envio{
     text-align: center;
+    font-family: $letra-2;
     background-color: rgb(246, 222, 222);
     height:22px;
     margin-bottom: auto;
@@ -23,7 +30,6 @@ body{
 }
 
 .navbar{
-    
     a{
         color: rgb(246, 246, 252);
     }
@@ -34,7 +40,7 @@ body{
         color: rgb(234, 34, 134);
         padding-left: 20px;
         font-size: 30px;
-        font-family: 'Fredoka One', cursive;
+        font-family: $letra-2;
         text-shadow: 2px 2px 2px 1px rgb(246, 246, 209);
     }
 
@@ -42,7 +48,7 @@ body{
         padding-right: 20px;
         a{
             font-size: 20px;
-            font-family: monospace;
+            font-family: $letra-2;
             text-shadow: 2px 2px 2px 1px rgb(246, 246, 209);
             padding-left: 15px;
             color: rgb(234, 34, 134);
@@ -71,17 +77,15 @@ body{
     .text{
         
         h1{
-            font-family:monospace;
+            font-family:$letra-2;
             color: rgb(234, 34, 134);
-            text-shadow: 1px 1px 1px  rgb(248, 243, 243);
-            font-size: 50px;
+            font-size: 45px;
             margin-top: 5px;
         }
         p{
-            font-family:monospace;
+            font-family:$letra-2;
             color: rgb(234, 34, 134);
             font-size: 20px;
-            text-shadow: 1px 1px 1px   rgb(248, 243, 243);
         }
     }
 }
@@ -97,7 +101,7 @@ body{
 
 .quienes{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     background-color: #abd5f7;;
     border-radius: 1px;
     img{
@@ -110,16 +114,16 @@ body{
     h4{
         text-align: center;
         font-size: 25px;
-        font-family:monospace;
-        color: rgb(255, 255, 255);
+        font-family:$letra-2;
+        color:  rgb(234, 34, 134);
         text-shadow: 2px 2px 5px 1px white;
         padding-top: 25px;
     }
     p{
         text-align: center;
         font-size: 30px;
-        font-family:monospace;
-        color: rgb(242, 243, 248);
+        font-family:$letra-2;
+        color: rgb(234, 34, 134);
         text-shadow: 2px 2px 5px 1px white;
         padding: 30px;
         text-align:justify;
@@ -129,9 +133,9 @@ body{
 .card{
     margin-top: 5px;
     border-radius: 15px;
-    background-color:rgb(20, 19, 19);
     border: none;
     margin: 40px;
+    background-color: rgb(75, 74, 74);
     &:hover{
         img{
             filter: brightness(50%);
@@ -160,20 +164,21 @@ body{
         font-size: 20px;
         text-shadow: 1px 1px 5px 1px rgb(248, 248, 248);
         transition: all 0.8s ease;
-        font-family:monospace;
+        font-family:$letra-2;
     }
     p{
         color: white;
         font-size: 15px;
         transition: all 0.8s ease;
-        font-family:monospace;
+        font-family:$letra-1;
     }
 
     .btn{
         font-size: 15px;
         background-color: #fdfcfb;
         color: black;
-        font-family:monospace;
+        font-family:$letra-2;
+        border: 2px solid rgb(8, 8, 8);
     }
     .carrito{
         display: flex;
@@ -194,7 +199,7 @@ body{
     h2{
         color: rgb(0, 0, 0);
         font-size: 45px;
-        font-family:monospace;
+        font-family:$letra-1;
         text-shadow: 2px 2px 2px rgb(250, 169, 169);
         margin-bottom: 20px;
     }
@@ -224,13 +229,13 @@ body{
     h2{
         color: rgb(0, 0, 0);
         font-size: 45px;
-        font-family:monospace;
+        font-family:$letra-1;
         text-shadow: 2px 2px 2px rgb(250, 169, 169);
         margin-bottom: 20px;
     }
     .btn{
         margin-top: 10px;
-        font-family:cursive;
+        font-family:$letra-2;
     }
     img{
         padding-top: 10px;
@@ -251,7 +256,7 @@ body{
 
 .oferta{
     height: 180px;
-    background-color: black;
+    background-color: rgb(75, 74, 74);
     color: #fdfcfb;
     text-align: center;
     font-family:monospace;
@@ -266,9 +271,14 @@ body{
         color: black;
         border-radius: 5px;
         text-align: center;
-        font-size: 18px;
+        font-size: 15px;
         margin-bottom: 5px;
         margin-top: 5px;
+        transition: all 0.5s ease;
+        &:hover{
+            height: 45px;
+            width: 125px;
+        }
     }
 }
 
@@ -282,24 +292,24 @@ footer{
     width: 100%;
     margin-bottom: 2px;
     margin-top: 50px;
-    background-color: rgb(246, 222, 222);
+    
     h4{
-        @include letra-color(monospace,rgb(54, 13, 235));
-        text-shadow: 2px 2px 2px  white;
+        @include letra-color($letra-1,white);
+        
         font-size: 15px;
         padding-left: 5px;
     }
     h3{
-        @include letra-color(monospace,rgb(22, 1, 255));
+        @include letra-color($letra-2,white);
         font-size: 10px;
         text-align: center;
     }
     p{
-        color: rgb(5, 5, 5);
+        color: white;
         padding-top: 10px;
         padding-left: 10px;
         font-size: 15px;
-        font-family:monospace;
+        font-family:$letra-2;
     }
 
     .redes{
@@ -307,17 +317,17 @@ footer{
             padding-bottom: 15px;
             padding-top: 15px;
             padding-left: 5px;
-            color: blue;
+            color: pink;
             font-size: 15px;
         }
         a{
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             padding-left: 20px;
-            font-family:monospace;
+            font-family:$letra-2;
             
             &:hover{
-                color: red;
+                color:palevioletred;
             }
         }
     }
@@ -325,17 +335,18 @@ footer{
         i{
             padding-left: 10px;
             font-size: 15px;
-            color: blue;
+            color: pink;
         }
     }
     .yo{
         i{
             padding-left: 10px;
             font-size: 20px;
-            color: blue;
+            color: pink;
         }
     }
 }
+
 .contactos{
     background-image: linear-gradient(rgba(29, 29, 29, 0.7),rgba(0,0,0,0.4)), url(/fotos/contactos-body.jpg);
     background-size: 100vw 100vh;
@@ -377,7 +388,7 @@ footer{
         background-color: antiquewhite;
         text-align: center;
         font-family: 'DM Serif Display', serif;
-        font-size: 18px;
+        font-size: 16px;
         width: 100px;
         height: 40px;
         border-radius: 10px;
@@ -393,7 +404,7 @@ footer{
     h1{
         text-align: center;
         color: rgb(234, 34, 134);
-        font-family:monospace;
+        font-family:$letra-1;
     }
 }
 
@@ -410,13 +421,15 @@ footer{
     h4{
         margin-top: 30px;
         text-align: center;
-        font-size: 35px;
+        font-size: 45px;
+        font-family: $letra-1;
+        color: rgb(234, 34, 134);
     }  
     .item-1{
         margin-top: 20px;
-        background-color:rgb(249, 202, 242);
+        background-color:$color-mujer;
         margin: 40px;
-
+        border-radius: 10px;
         &:hover{
             img{
                 filter: brightness(50%);
@@ -426,16 +439,16 @@ footer{
             }
         }
         img{
-            margin-top: 5px;
+            margin-top: 10px;
             width: 100%;
-            border-radius: 2px;
-
+            border-radius: 10px;
+            transition: all 0.8s ease;
         }
         p{
             margin-top: 5px;
             text-align: center;
             color: #080808;
-            font-family: monospace;
+            font-family:$letra-2;
         }
         button{
             text-align: center;
@@ -443,6 +456,7 @@ footer{
             margin: 10px;
             padding: 10px;
             border-radius: 5px;
+            transition: all 0.8s ease;
             &:hover{
                 background-color: fuchsia;
                 color: white;
@@ -451,10 +465,10 @@ footer{
     }
 }
 .titulo-hombre{
-    margin-top: 100px;
+    margin-top: 120px;
     color: #45a4f1;
     text-align: center;
-    font-family: monospace;
+    font-family: $letra-1;
 }
 .foto-portada-hombre{
     margin-top: 30px;
@@ -466,32 +480,53 @@ footer{
 
 .hombre-venta{
     text-align: center;
+
     h4{
         text-align: center;
-        font-family: monospace;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        font-family:$letra-1;
+        margin-top: 40px;
+        font-size: 45px;
+        color: #45a4f1;
     }
     
     .item-1{
         margin-top:10px;
         border-radius: 10px;
-        background-color: #aaafb4;;
+        background-color: $color-hombre;
+        margin: 40px;
+    
         img{
             width: 100%;
             margin-top: 10px;
+            transition: all 0.9s ease;
         }
         button{
             margin: 10px;
             text-align: center;
+            
             padding: 8px;
             border-radius: 8px;
-            background-color: lightgray;    
+            background-color: lightgray;
+            transition: all 0.8s ease;
         }
         p{
-            color: #fdfcfb;
+            color: black;
             margin-top: 10px;
-            font-family: monospace;
+            font-family: $letra-2;
+            font-size: 18px;
+        }
+        &:hover{
+            p{
+                color: #45a4f1;
+            }
+            img{
+                filter: brightness(50%);
+            }  
+            button{
+                background-color: white;
+                color: #45a4f1;
+                border: solid 2px #45a4f1;
+            }
         }
     }
 }
@@ -504,7 +539,7 @@ footer{
     h3{
         text-align: center;
         margin: 20px;
-        font-family: monospace;
+        font-family: $letra-1;
         color: #fdfcfb;
     }
     .pago{
@@ -519,7 +554,7 @@ footer{
         p{
             text-align: center;
             margin-top: 5px;
-            font-family: monospace;
+            font-family: $letra-2;
             font-size: 20px;
             color: #fdfcfb;
         }
